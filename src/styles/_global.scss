@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+body {
+  background-color: $light-color;
+  color: $dark-color;
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+button {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
