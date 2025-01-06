@@ -1,7 +1,7 @@
 import "./Sidebar.scss";
 import hippoLogo from "../../assets/hippo.svg";
 import { Link, useLocation } from "react-router-dom";
-import { HomeIcon, GearIcon } from "@radix-ui/react-icons";
+import { HomeIcon, GearIcon, CalendarIcon } from "@radix-ui/react-icons";
 
 const Sidebar = () => {
   const location = useLocation();
@@ -17,6 +17,14 @@ const Sidebar = () => {
             <li className={`${location.pathname === "/" ? "active" : ""}`}>
               <HomeIcon color="black" />
               Home
+            </li>
+          </Link>
+          <Link to="/calendar">
+            <li
+              className={`${location.pathname === "/calendar" ? "active" : ""}`}
+            >
+              <CalendarIcon color="black" />
+              Calendar
             </li>
           </Link>
           <Link to="/settings">
